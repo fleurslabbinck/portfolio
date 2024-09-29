@@ -1,0 +1,125 @@
+﻿/*Basic*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #1b4965;
+    color: #cae9ff;
+    background-image: url("Images/background.png");
+}
+
+h1 {
+    font-size: 50px;
+    color: #62B6CB;
+}
+
+h2 {
+    font-size: 25px;
+    font-style: italic;
+    color: #BEE9E8;
+}
+
+h3 {
+    font-size: 30px;
+    color: #BEE9E8;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    width: 775px;
+    border-bottom: dashed #BEE9E8;
+}
+
+@media (max-width: 808px) {
+    h3 {
+        font-size: 30px;
+        color: #BEE9E8;
+        margin: 20px auto;
+        margin-bottom: 20px;
+        width: 95%;
+        border-bottom: dashed #BEE9E8;
+    }
+}
+
+h4 {
+    font-size: 20px;
+    color: #091820;
+}
+
+h5 {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #62B6CB;
+}
+
+h6 {
+    margin-bottom: 5px;
+    padding: 8px 15px;
+    width: max-content;
+    font-size: 20px;
+    color: #122F40;
+    background-color: #5FA8D3;
+    border-radius: 100px;
+}
+
+h7 {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    padding: 5px 12px;
+    width: max-content;
+    font-size: 20px;
+    color: #5FA8D3;
+    background-color: #1B4965;
+    border-radius: 100px;
+    border: solid #5FA8D3;
+}
+
+section {
+    scroll-margin-top: 150px;
+}
+
+@media (max-width: 950px) {
+    section {
+        scroll-margin-top: 185px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+a .plug {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px auto;
+    padding: 10px 10px;
+    width: 200px;
+    background-color: #091820;
+    color: #BEE9E8;
+    border: dashed #BEE9E8;
+    border-radius: 100px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a .plug i {
+    font-size: 50px;
+}
+
+a .plug p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+a:hover .plug {
+    background-color: #1B4965;
+    transform: scale(1.05);
+}
+
+a:active .plug {
+    background-color: #3F8098;
+}
