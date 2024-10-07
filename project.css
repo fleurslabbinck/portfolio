@@ -1,19 +1,13 @@
 ﻿/*project*/
 .placeholder {
-    height: 150px;
-}
-
-@media (max-width: 525px) {
-    .placeholder {
-        height: 200px;
-    }
+    height: 175px;
 }
 
 .background-element {
     position: fixed;
     top: 0;
     left: 50%;
-    width: 800px;
+    width: 950px;
     height: 100vh;
     background-color: #0D2330;
     opacity: 0.6;
@@ -23,13 +17,12 @@
 
 .project-description {
     margin: 10px auto;
-    width: 775px;
+    max-width: 925px;
 }
 
-@media (max-width: 808px) {
+@media only screen and (max-width: 768px) {
     .project-description {
-        margin: 10px auto;
-        max-width: 95%;
+        width: 90%;
     }
 }
 

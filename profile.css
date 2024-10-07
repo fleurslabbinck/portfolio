@@ -3,19 +3,13 @@ section.profile {
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
     max-width: 800px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 div.placeholder {
-    height: 125px;
-}
-
-@media (max-width: 950px) {
-    div.placeholder {
-        height: 175px;
-    }
+    height: 175px;
 }
 
 img.me {
@@ -43,6 +37,15 @@ div.textballon {
     border-top: 20px solid transparent;
 }
 
+@media only screen and (max-width: 768px) {
+    .right-arrow {
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #5FA8D3;
+        border-top: 20px solid transparent;
+    }
+}
+
 div.intro {
     margin: 10px 10px 0 0;
     padding: 30px;
@@ -52,4 +55,12 @@ div.intro {
     border-radius: 20px;
     width: 400px;
     max-height: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+    div.intro {
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+    }
 }
