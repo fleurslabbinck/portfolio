@@ -42,6 +42,7 @@ h3 {
     margin-bottom: 20px;
     max-width: 950px;
     border-bottom: dashed #BEE9E8;
+    padding: 0 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -65,17 +66,33 @@ h5 {
     color: #62B6CB;
 }
 
-h6 {
+p1 {
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #cae9ff;
+    background-color: #1B4965;
+    border-radius: 100px;
+}
+
+p1 i {
+    padding: 0 5px 0 0;
+    font-size: 15px;
+    color: #cae9ff;
+}
+
+p2 {
     margin-bottom: 5px;
     padding: 8px 15px;
     width: max-content;
     font-size: 20px;
+    font-weight: 600;
     color: #122F40;
     background-color: #5FA8D3;
     border-radius: 100px;
 }
 
-h7 {
+p3 {
     margin-bottom: 10px;
     margin-left: 5px;
     padding: 5px 12px;
