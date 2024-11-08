@@ -29,6 +29,10 @@ div.project-description {
     flex-grow: 1;
 }
 
+div p {
+    margin-top: 10px;
+}
+
 img.project-image {
     height: auto;
     border-radius: 10px;
