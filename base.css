@@ -10,6 +10,16 @@ body {
     background-color: #1b4965;
     color: #cae9ff;
     background-image: url("Images/background.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+@media (min-width: 1500px) {
+    body {
+        background-size: 1500px auto;
+        background-repeat: repeat;
+    }
 }
 
 h1 {
