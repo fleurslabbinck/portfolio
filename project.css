@@ -89,7 +89,7 @@ a.text:active::after {
     margin: 0 auto;
     margin-bottom: 40px;
     max-width: 950px;
-    justify-items:center;
+    justify-items: center;
 }
 
 @media only screen and (max-width: 768px) {

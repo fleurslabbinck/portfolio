@@ -36,6 +36,7 @@ div p {
 img.project-image {
     height: auto;
     border-radius: 10px;
+    margin-left: 10px;
 }
 
 div.specs {

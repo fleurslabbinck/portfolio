@@ -76,6 +76,10 @@ h5 {
     color: #62B6CB;
 }
 
+p {
+    text-align: justify;
+}
+
 p1 {
     padding: 8px 12px;
     font-size: 15px;
