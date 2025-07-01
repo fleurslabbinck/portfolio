@@ -1,0 +1,23 @@
+/* navigation bar component */
+
+.skills .container {
+	background-color: var(--primary-color);
+	border-radius: var(--border-radius-container);
+}
+
+.skills h1 {
+	padding: 5px;
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--background-color-light);
+	background-color: var(--secondary-color);
+	border-top-left-radius: var(--border-radius-container);
+	border-top-right-radius: var(--border-radius-container);
+	text-align: center;
+}
+
+.skills ul li {
+	margin: 10px;
+	font-weight: 500;
+	color: var(--background-color-dark);
+}

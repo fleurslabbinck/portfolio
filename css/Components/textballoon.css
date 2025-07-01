@@ -1,0 +1,71 @@
+/* text balloon component */
+
+.textballoon {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.textballoon .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.textballoon img {
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    border: dashed var(--accent-color);
+    border-radius: 100%;
+    height: auto;
+}
+
+.textballoon .arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid var(--primary-color);
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+}
+
+.textballoon .body {
+    margin: 10px 10px 0 0;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    color: var(--background-color-dark);
+    border-radius: 20px;
+    width: 400px;
+    max-height: 300px;
+}
+
+/* responsive adjustments */
+@media only screen and (max-width: 790px) {
+    .textballoon img {
+        margin: 0 auto;
+    }
+
+    .textballoon .container {
+        display: block;
+    }
+
+    .textballoon .arrow {
+        margin: 0 auto;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid var(--primary-color);
+        border-top: 20px solid transparent;
+    }
+
+    .textballoon .body {
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+    }
+}

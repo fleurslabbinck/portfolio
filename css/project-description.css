@@ -1,0 +1,22 @@
+/* project description */
+
+.project {
+    max-width: var(--content-width);
+    margin: 0 auto;
+}
+
+.project .info li {
+    display: flex;
+    align-items: center;
+}
+
+.project i {
+    margin: 5px;
+    width: 30px;
+}
+
+.project p,
+.project i {
+    color: var(--background-color-dark);
+    font-size: 16px;
+}

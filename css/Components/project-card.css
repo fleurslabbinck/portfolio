@@ -1,0 +1,57 @@
+/* project card component */
+
+.card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius-container);
+    transition: background-color var(--transition-speed) var(--transition-ease), 
+        transform var(--transition-speed) var(--transition-ease);
+}
+
+.card:hover {
+    background-color: var(--tertiary-color);
+    transform: var(--container-scale);
+}
+
+.card .content {
+    display: flex;
+    gap: 10px;
+}
+
+.card img {
+    height: 200px;
+    width: 200px;
+    border-radius: var(--border-radius-button);
+}
+
+/* text style */
+.card h1 {
+    font-size: 20px;
+    color: var(--background-color-dark);
+}
+
+.card p {
+    margin-top: 10px;
+    color: var(--background-color-light);
+}
+
+/* navigation list */
+.card ul {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.card ul li {
+    padding: 5px 10px;
+    font-weight: 600;
+    color: var(--background-color-light);
+    background-color: var(--background-color-dark);
+    opacity: 0.8;
+    border-radius: 50px;
+}

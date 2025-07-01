@@ -1,0 +1,26 @@
+﻿/*contact*/
+
+.contact div {
+    display: flex;
+    margin: 0 auto;
+    padding: 2px 4px;
+    width: fit-content;
+    background-color: var(--primary-color);
+    border-radius: 100px;
+}
+
+.contact i {
+    padding: 10px;
+    color: var(--background-color-dark);
+    font-size: 40px;
+    transition: color var(--transition-speed) var(--transition-ease), transform var(--transition-speed) var(--transition-ease);
+}
+
+.contact i:hover {
+    transform: scale(1.1);
+    color: var(--secondary-color);
+}
+
+.contact i:active {
+    color: var(--tertiary-color);
+}

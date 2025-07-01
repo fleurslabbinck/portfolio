@@ -1,0 +1,50 @@
+﻿/* project */
+
+@import url("base.css");
+
+@import url("Components/navigation-bar.css");
+@import url("Components/page-layout.css");
+@import url("Components/yt-container.css");
+@import url("Components/plug.css");
+
+.project {
+    max-width: var(--content-width);
+    width: 95%;
+    margin: 0 auto;
+}
+
+.project .info li {
+    display: flex;
+    align-items: center;
+}
+
+.project ul i {
+    margin: 5px;
+    width: 30px;
+}
+
+.project .description,
+.project ul li,
+.project ul i {
+    color: var(--background-color-dark);
+    font-size: 16px;
+}
+
+.project .images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    justify-items: center;
+}
+
+.project img {
+    padding: 10px;
+    max-width: 100%;
+    border-radius: var(--border-radius-container);
+}
+
+@media only screen and (max-width: 768px) {
+    .project .images {
+        display: grid;
+        grid-template-columns: unset;
+    }
+}

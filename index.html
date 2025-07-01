@@ -5,24 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fleur Slabbinck Portfolio</title>
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="profile.css">
-    <link rel="stylesheet" href="projects.css">
-    <link rel="stylesheet" href="skills.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <!--Fixed top-->
-    <section class="top">
-        <div class="nav">
-            <header>
+    <!--Navigation bar-->
+    <header class="nav">
+        <div class="container">
+            <div>
                 <h1>Fleur Slabbinck</h1>
                 <h2>Gameplay Programmer</h2>
-            </header>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#about-me">About me</a></li>
@@ -32,197 +27,254 @@
                 </ul>
             </nav>
         </div>
-    </section>
+    </header>
 
-    <div class="placeholder"></div>
-
-    <!--Profile-->
-    <section id="about-me" class="profile">
-        <img class="me" src="Images/picture.jpg" height="300" width="300" />
-        <div class="textballon">
-            <div class="right-arrow"></div>
-            <div class="intro">
-                <p>
-                    I am a motivated and versatile graduate with a degree
-                    in Game Development. Throughout my academic
-                    projects, I developed a solid foundation in C++ and
-                    gained hands-on experience with both Unreal Engine
-                    and Unity. I developed a strong passion for gameplay
-                    programming and am always eager to continue
-                    expanding my knowledge.
-                </p>
+    <main>
+        <!--Profile-->
+        <section id="about-me">
+            <div class="layout">
+                <div class="l-spacer"></div>
             </div>
+
+            <div class="textballoon">
+                <img src="Images/picture.jpg" />
+                <div class="container">
+                    <div class="arrow"></div>
+                    <div class="body">
+                        <p>
+                            I am a motivated and versatile graduate with a degree
+                            in Game Development. Throughout my academic
+                            projects, I developed a solid foundation in C++ and
+                            gained hands-on experience with both Unreal Engine
+                            and Unity. I developed a strong passion for gameplay
+                            programming and am always eager to continue
+                            expanding my knowledge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Projects-->
+        <section id="projects">
+            <div class="layout">
+                <div class="s-spacer"></div>
+                <h1>Projects</h1>
+            </div>
+
+            <div class="projects">
+                <a href="bomberman.html">
+                    <article class="card">
+                        <div class="content">
+                            <div>
+                                <h1>Bomberman</h1>
+                                <p>
+                                    A remake of Bomberman, devoloped in C++ with my own 2D engine
+                                    in order to showcase the abilities and design patterns of the engine.
+                                </p>
+                            </div>
+                            <img src="Images/Bomberman/Bomberman_kill.gif" />
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="fa-solid fa-user-group"></i>1</li>
+                                <li><i class="fa-solid fa-gear"></i>2D Egnine</li>
+                                <li><i class="fa-solid fa-code"></i>C++</li>
+                            </ul>
+                        </div>
+                    </article>
+                </a>
+                <a href="engine.html">
+                    <article class="card">
+                        <div class="content">
+                            <div>
+                                <h1>2D Engine</h1>
+                                <p>
+                                    My own Engine for the development of 2D games. The potential
+                                    of the engine was demonstrated with the Bomberman project.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="fa-solid fa-user-group"></i>1</li>
+                                <li><i class="fa-solid fa-gear"></i>SDL 2</li>
+                                <li><i class="fa-solid fa-code"></i>C++</li>
+                            </ul>
+                        </div>
+                    </article>
+                </a>
+                <a href="ww.html">
+                    <article class="card">
+                        <div class="content">
+                            <div>
+                                <h1>Winged Warfare</h1>
+                                <p>
+                                    A group project in Unreal Engine C++ where some penguins shoot robotics birds at each other.
+                                </p>
+                            </div>
+                            <img src="Images/WingedWarfare/WW.png" />
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="fa-solid fa-user-group"></i>4</li>
+                                <li><i class="fa-solid fa-gear"></i>Unreal Engine</li>
+                                <li><i class="fa-solid fa-code"></i>C++</li>
+                            </ul>
+                        </div>
+                    </article>
+                </a>
+                <a href="sav.html">
+                    <article class="card">
+                        <div class="content">
+                            <div>
+                                <h1>Shield and Veil</h1>
+                                <p>
+                                    A knight, equiped with special artefacts, is on his way to save
+                                    the princess through a forest highly guarded with archers.
+                                </p>
+                                <p>
+                                    This was part of a school project that turned into my personal
+                                    project as I really enjoyed working on it and went a bit overboard.
+                                </p>
+                            </div>
+                            <img src="Images/ShieldAndVeil/ShieldAndVeil_Game.png" />
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="fa-solid fa-user-group"></i>1</li>
+                                <li><i class="fa-solid fa-gear"></i>Unreal Engine</li>
+                                <li><i class="fa-solid fa-code"></i>C++</li>
+                            </ul>
+                        </div>
+                    </article>
+                </a>
+                <a href="robotopia.html">
+                    <article class="card">
+                        <div class="content">
+                            <div>
+                                <h1>Robotopia</h1>
+                                <p>
+                                    A group project with MyMachine Flanders where we collaborated with children
+                                    of an elementary school class to make their dream come true.
+                                </p>
+                            </div>
+                            <img src="Images/Robotopia/Robotopia.png" />
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="fa-solid fa-user-group"></i>6</li>
+                                <li><i class="fa-solid fa-gear"></i>Unreal Egnine</li>
+                                <li><i class="fa-solid fa-code"></i>C++</li>
+                            </ul>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </section>
+
+        <!--Skills-->
+        <section id="skills">
+            <div class="layout">
+                <div class="s-spacer"></div>
+                <h1>Skills</h1>
+            </div>
+
+            <div class="skills">
+                <ul class="info">
+                    <li>● Proficient</li>
+                    <li>○ Some experience</li>
+                </ul>
+
+                <div class="skills-list">
+                    <div class="container">
+                        <h1>Programming Languages</h1>
+                        <ul>
+                            <li>● C++</li>
+                            <li>● C#</li>
+                            <li>● XAML</li>
+                            <li>○ HTML 5</li>
+                            <li>○ CSS 3</li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <h1>Game Engines</h1>
+                        <ul>
+                            <li>● Unreal Engine 5</li>
+                            <li>● Unity</li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <h1>Frameworks</h1>
+                        <ul>
+                            <li>● WPF</li>
+                            <li>● GLM</li>
+                            <li>● SDL</li>
+                            <li>○ OpenGL</li>
+                            <li>○ Qt</li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <h1>IDE</h1>
+                        <ul>
+                            <li>● Visual Studio</li>
+                            <li>● Rider</li>
+                            <li>○ VS Code</li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <h1>Source Control</h1>
+                        <ul>
+                            <li>● Git</li>
+                            <li>● Perforce</li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <h1>Tools</h1>
+                        <ul>
+                            <li>● Photoshop</li>
+                            <li>● Maya</li>
+                            <li>● Illustrator</li>
+                            <li>○ Houdini</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Contact-->
+        <section id="contact">
+            <div class="layout">
+                <div class="s-spacer"></div>
+                <h1>Contact</h1>
+            </div>
+
+            <section class="contact">
+                <div>
+                    <a href="https://github.com/fleurslabbinck" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="mailto:fleur.slabbinck@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fleur-slabbinck-a0800932b/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="Files/Resume_FleurSlabbinck.pdf" target="_blank">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                    </a>
+
+                </div>
+            </section>
+        </section>
+
+        <div class="layout">
+            <div class="s-spacer"></div>
         </div>
-    </section>
-
-    <!--Projects-->
-    <section id="projects">
-        <h3>Projects</h3>
-        <section class="projects">
-            <a href="bomberman.html">
-                <article class="project">
-                    <div class="project-description">
-                        <h4>Bomberman</h4>
-                        <p>A remake of Bomberman, devoloped in C++ with my own 2D engine in order to showcase the abilities and design patterns of the engine.</p>
-                    </div>
-                    <img class="project-image" src="Images/Bomberman/Bomberman_kill.gif" height="200" width="200" />
-                    <div class="overlay"></div>
-                </article>
-                <div class="specs">
-                    <p1><i class="fa-solid fa-user-group"></i>1</p1>
-                    <p1><i class="fa-solid fa-gear"></i>2D Egnine</p1>
-                    <p1><i class="fa-solid fa-code"></i>C++</p1>
-                </div>
-            </a>
-            <a href="engine.html">
-                <article class="project">
-                    <div class="project-description">
-                        <h4>2D Engine</h4>
-                        <p>My own Engine for the development of 2D games. The potential of the engine was demonstrated with the Bomberman project.</p>
-                    </div>
-                </article>
-                <div class="specs">
-                    <p1><i class="fa-solid fa-user-group"></i>1</p1>
-                    <p1><i class="fa-solid fa-gear"></i>SDL 2</p1>
-                    <p1><i class="fa-solid fa-code"></i>C++</p1>
-                </div>
-            </a>
-            <a href="ww.html">
-                <article class="project">
-                    <div class="project-description">
-                        <h4>Winged Warfare</h4>
-                        <p>A group project in Unreal Engine C++ where some penguins shoot robotics birds at each other.</p>
-                    </div>
-                    <img class="project-image" src="Images/WingedWarfare/WW.png" height="200" width="200" />
-                </article>
-                <div class="specs">
-                    <p1><i class="fa-solid fa-user-group"></i>4</p1>
-                    <p1><i class="fa-solid fa-gear"></i>Unreal Engine</p1>
-                    <p1><i class="fa-solid fa-code"></i>C++</p1>
-                </div>
-            </a>
-            <a href="sav.html">
-                <article class="project">
-                    <div class="project-description">
-                        <h4>Shield And Veil</h4>
-                        <p>A knight, equiped with special artefacts, is on his way to save the princess through a forest highly guarded with archers.</p>
-                        <p>This was part of a school project that turned into my personal project as I really enjoyed working on it and went a bit overboard.</p>
-                    </div>
-                    <img class="project-image" src="Images/ShieldAndVeil/ShieldAndVeil_Game.png" height="200" width="200" />
-                </article>
-                <div class="specs">
-                    <p1><i class="fa-solid fa-user-group"></i>1</p1>
-                    <p1><i class="fa-solid fa-gear"></i>Unreal Engine</p1>
-                    <p1><i class="fa-solid fa-code"></i>C++</p1>
-                </div>
-            </a>
-            <a href="mm.html">
-                <article class="project">
-                    <div class="project-description">
-                        <h4>MyMachine (WIP)</h4>
-                        <p>Current group project with MyMachine Vlaanderen where we collaborate with an elementary school class and make their dreams come true (in game).</p>
-                    </div>
-                    <img class="project-image" src="Images/MyMachine/MM.png" height="200" width="200" />
-                    <div class="overlay"></div>
-                </article>
-                <div class="specs">
-                    <p1><i class="fa-solid fa-user-group"></i>6</p1>
-                    <p1><i class="fa-solid fa-gear"></i>Unreal Egnine</p1>
-                    <p1><i class="fa-solid fa-code"></i>C++</p1>
-                </div>
-            </a>
-            <a href="zombie.html">
-                <article class="project">
-                    <div class="project-description">
-                        <h4>Zombie Survival Game</h4>
-                        <p>In a harsh environment full of zombies, my AI character needs to be able to survive by looting and shooting zombies.</p>
-                    </div>
-                    <img class="project-image" src="Images/ZombieSurvival/Zombie.gif" height="200" width="200" />
-                    <div class="overlay"></div>
-                </article>
-                <div class="specs">
-                    <p1><i class="fa-solid fa-user-group"></i>1</p1>
-                    <p1><i class="fa-solid fa-gear"></i>Custom Egnine</p1>
-                    <p1><i class="fa-solid fa-code"></i>C++</p1>
-                </div>
-            </a>
-        </section>
-    </section>
-
-    <!--Skills-->
-    <section id="skills">
-        <h3>Skills</h3>
-        <section class="skills">
-            <div class="category">
-                <p2>Languages</p2>
-                <p3>C++</p3>
-                <p3>C#</p3>
-                <p3>HTML 5</p3>
-                <p3>CSS 3</p3>
-                <p3>XAML</p3>
-            </div>
-            <div class="category">
-                <p2>Game Engines</p2>
-                <p3>Unreal Engine 5</p3>
-                <p3>Unity</p3>
-            </div>
-            <div class="category">
-                <p2>Frameworks</p2>
-                <p3>SDL</p3>
-                <p3>GLM</p3>
-                <p3>OpenGL</p3>
-                <p3>GLFW</p3>
-                <p3>Qt</p3>
-            </div>
-            <div class="category">
-                <p2>IDE</p2>
-                <p3>Visual Studio</p3>
-                <p3>Rider</p3>
-            </div>
-            <div class="category">
-                <p2>Source Control</p2>
-                <p3>Git</p3>
-                <p3>Perforce</p3>
-            </div>
-            <div class="category">
-                <p2>Tools</p2>
-                <p3>Maya</p3>
-                <p3>Houdini</p3>
-                <p3>Photoshop</p3>
-                <p3>Illustrator</p3>
-                <p3>InDesign</p3>
-                <p3>Premiere Pro</p3>
-                <p3>AutoCAD</p3>
-            </div>
-        </section>
-    </section>
-
-    <!--Contact-->
-    <section id="contact">
-        <h3>Contact</h3>
-        <section class="contact">
-            <div class="socials">
-                <a href="https://github.com/fleurslabbinck" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="mailto:fleur.slabbinck@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/fleur-slabbinck-a0800932b/" target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="Files/Resume_FleurSlabbinck.pdf" target="_blank">
-                    <i class="fa-solid fa-file-arrow-down"></i>
-                </a>
-
-            </div>
-        </section>
-    </section>
-
+    </main>
+    
     <footer>
         
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

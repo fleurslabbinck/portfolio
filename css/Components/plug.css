@@ -1,0 +1,67 @@
+/* plug component */
+
+.in-text-plug {
+    position: relative;
+    color: var(--secondary-color);
+}
+
+.in-text-plug::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform-origin: left;
+}
+
+.in-text-plug:hover {
+    transition: color var(--transition-speed) var(--transition-ease);
+}
+
+.in-text-plug:hover::after {
+    transform: scaleX(1);
+}
+
+.in-text-plug:active {
+    color: var(--background-color-dark);
+}
+
+.in-text-plug:active::after {
+    background-color: var(--background-color-dark);
+}
+
+.plug {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    width: 200px;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--accent-color);
+    background-color: var(--background-color-dark);
+    border: dashed var(--accent-color);
+    border-radius: 100px;
+    transition: background-color var(--transition-speed) var(--transition-ease), transform var(--transition-speed) var(--transition-ease);
+}
+
+.plug i {
+    font-size: 50px;
+}
+
+.plug p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.plug:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.plug:active {
+    background-color: var(--tertiary-color);
+}

@@ -1,0 +1,23 @@
+/* layout component */
+
+.layout .s-spacer {
+    height: 20px;
+}
+
+.layout .m-spacer {
+    height: 150px;
+}
+
+.layout .l-spacer {
+    height: 175px;
+}
+
+.layout h1{
+    font-size: 30px;
+    color: var(--background-color-dark);
+    margin: 10px auto;
+    margin-bottom: 20px;
+    max-width: var(--content-width);
+    border-bottom: dashed var(--accent-color);
+    padding: 0 10px;
+}

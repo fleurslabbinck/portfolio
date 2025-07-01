@@ -5,68 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bomberman</title>
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="css/project.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <!--Fixed top-->
-    <section class="top">
-        <div class="nav">
-            <header>
-                <h1>Fleur Slabbinck</h1>
-                <h2>Gameplay Programmer</h2>
-            </header>
+    <!--Navigation bar-->
+    <header class="nav">
+        <div class="container">
+            <div>
+                <h1>Bomberman</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                 </ul>
             </nav>
         </div>
-    </section>
+    </header>
 
-    <div class="placeholder"></div>
-    <div class="background-element"></div>
+    <main>
+        <section class="project">
+            <div class="layout">
+                <div class="m-spacer"></div>
+                <h1>Project Info</h1>
+            </div>
 
-    <section class="bomberman">
-        <h3>Bomberman</h3>
-        <div class="project-description">
-            <h5>Project Info</h5>
-            <ul class="project-info">
-                <li><i class="fa-solid fa-user-group"></i>Team size: 1</li>
-                <li><i class="fa-solid fa-gear"></i><p>Framework: <a class="text" href="engine.html">2D Engine</a></p></li>
-                <li><i class="fa-solid fa-code"></i>Language: C++</li>
-            </ul>
-            <h5>About</h5>
-            <p class="paragraph">
-                This project was a Bomberman remake that was part of an exam assignment for a course at DAE, together with my 2D Engine.
-                The purpose of the project was to test the abilities of my engine and proof my grasp of the used design patterns.
+            <div class="info">
+                <ul>
+                    <li><i class="fa-solid fa-user-group"></i>Team size: 1</li>
+                    <li><i class="fa-solid fa-gear"></i><span>Engine: <a class="in-text-plug" href="engine.html">2D Engine</a></span></li>
+                    <li><i class="fa-solid fa-code"></i>Language: C++</li>
+                </ul>
+            </div>
+
+            <div class="layout">
+                <div class="s-spacer"></div>
+                <h1>About</h1>
+            </div>
+
+            <p class="description">
+                This project was a Bomberman remake that was part of an exam
+                assignment for a course at DAE, together with my 2D Engine.
+                The purpose of the project was to test the abilities of my
+                engine and proof my grasp of the used design patterns.
             </p>
-            <h5>What I Learned</h5>
-            <p class="paragraph">
+
+            <div class="layout">
+                <div class="s-spacer"></div>
+                <h1>What I Learned</h1>
+            </div>
+
+            <p class="description">
                 Making this project was a huge learning experience.
-                It taught me more than just understanding and implementing the <a class="text" href="engine.html#design-patterns">design patterns</a> used in the engine.
-                Some mechanics were way more complicated than I initially imagined, and required some challenging problem-soling skills.
+                It taught me more than just understanding and implementing
+                the <a class="in-text-plug" href="engine.html#design-patterns">design patterns</a> used in the engine.
+                Some mechanics were way more complicated than I initially
+                imagined, and required some challenging problem-soling skills.
                 Overall, this was a challenging, but most of all fun project to work on.
             </p>
-        </div>
 
-        <div class="project-images">
-            <img src="Images/Bomberman/Bomberman_menu.gif" />
-            <img src="Images/Bomberman/Bomberman_exit.gif" />
-            <img src="Images/Bomberman/Bomberman_kill.gif" />
-            <img src="Images/Bomberman/Bomberman_stage.gif" />
-        </div>
+            <div class="layout">
+                <div class="s-spacer"></div>
+            </div>
 
-        <a href="https://github.com/fleurslabbinck/DAE_Programming4_Bomberman" target="_blank">
-            <div class="plug">
+            <div class="images">
+                <img src="Images/Bomberman/Bomberman_menu.gif" />
+                <img src="Images/Bomberman/Bomberman_exit.gif" />
+                <img src="Images/Bomberman/Bomberman_kill.gif" />
+                <img src="Images/Bomberman/Bomberman_stage.gif" />
+            </div>
+
+            <div class="layout">
+                <div class="s-spacer"></div>
+            </div>
+
+            <a class="plug" href="https://github.com/fleurslabbinck/DAE_Programming4_Bomberman" target="_blank">
                 <i class="fa-brands fa-github"></i>
                 <p>Project</p>
+            </a>
+
+            <div class="layout">
+                <div class="s-spacer"></div>
             </div>
-        </a>
-    </section>
+        </section>
+    </main>
 </body>
 </html>

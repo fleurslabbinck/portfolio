@@ -5,75 +5,106 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2D Engine</title>
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="css/project.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <!--Fixed top-->
-    <section class="top">
-        <div class="nav">
-            <header>
-                <h1>Fleur Slabbinck</h1>
-                <h2>Gameplay Programmer</h2>
-            </header>
+    <!--Navigation bar-->
+    <header class="nav">
+        <div class="container">
+            <div>
+                <h1>2D Engine</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                 </ul>
             </nav>
         </div>
-    </section>
+    </header>
 
-    <div class="placeholder"></div>
-    <div class="background-element"></div>
+    <main>
+        <section class="project">
+            <div class="layout">
+                <div class="m-spacer"></div>
+                <h1>Project Info</h1>
+            </div>
 
-    <section class="engine">
-        <h3>2D Engine</h3>
-        <div class="project-description">
-            <h5>Project Info</h5>
-            <ul class="project-info">
-                <li><i class="fa-solid fa-user-group"></i>Team size: 1</li>
-                <li><i class="fa-solid fa-gear"></i>Framework: SDL 2</li>
-                <li><i class="fa-solid fa-code"></i>Language: C++</li>
-            </ul>
-            <h5>About</h5>
-            <p class="paragraph">
-                This project, combined with the <a class="text" href="bomberman.html">Bomberman remake</a> was part of an exam assignment for a DAE course.
-                It is a 2D game engine with an SDL 2 framework for arcade style games, written in purely C++ according to the C++ Core Guidelines.
-                The engine builds further upon the <a class="text" href="https://github.com/avadae/minigin" target="_blank">Minigin</a> start project, which is nowhere near a game engine yet and only contains the bare minimum.
-                The book <a class="text" href="https://gameprogrammingpatterns.com/" target="_blank">Game Programming Patterns</a> by Robert Nystrom provided great guidence during the process of implementing all kinds of game patterns.
-                The engine was successfully put to the test by the recreation of Bomberman</a>.
+            <div class="info">
+                <ul>
+                    <li><i class="fa-solid fa-user-group"></i>Team size: 1</li>
+                    <li><i class="fa-solid fa-gear"></i>Engine: SDL2</li>
+                    <li><i class="fa-solid fa-code"></i>Language: C++</li>
+                </ul>
+            </div>
+
+            <div class="layout">
+                <div class="s-spacer"></div>
+                <h1>About</h1>
+            </div>
+
+            <p class="description">
+                This project, combined with the <a class="in-text-plug" href="bomberman.html">Bomberman remake</a>
+                was part of an exam assignment for a DAE course.
+                It is a 2D game engine with an SDL 2 framework for arcade style
+                games, written in purely C++ according to the C++ Core Guidelines.
+                The engine builds further upon the
+                <a class="in-text-plug" href="https://github.com/avadae/minigin" target="_blank">Minigin</a>
+                start project, which is nowhere near a game engine yet and only contains the bare minimum.
+                The book <a class="in-text-plug" href="https://gameprogrammingpatterns.com/" target="_blank">Game Programming Patterns</a>
+                by Robert Nystrom provided great guidence during the process of implementing all kinds of game patterns.
+                The engine was successfully put to the test by the recreation of
+                <a class="in-text-plug" href="bomberman.html">Bomberman</a>.
             </p>
-            <h5 id="design-patterns">Design Patterns</h5>
-            <ul>
-                <li>Game Object and Component</li>
-                <li>Game Loop</li>
-                <li>Update Method</li>
-                <li>Dirty Flag</li>
-                <li>Command</li>
-                <li>Observer</li>
-                <li>Event Queue</li>
-                <li>Service Locator</li>
-                <li>Singleton</li>
-                <li>State</li>
-            </ul>
-            <h5>What I learned</h5>
-            <p class="paragraph">
-                This was by far my most interesting project yet. 
-                Getting to know how game engines work was invaluable and improved me as a gameplay programmer in general.
-                The whole experience taught me a lot and I cannot wait to keep learning more.
+
+            <div class="layout">
+                <div class="s-spacer"></div>
+                <h1>Design Patterns</h1>
+            </div>
+
+            <p class="description">
+                <ul>
+                    <li>Game Object and Component</li>
+                    <li>Game Loop</li>
+                    <li>Update Method</li>
+                    <li>Dirty Flag</li>
+                    <li>Command</li>
+                    <li>Observer</li>
+                    <li>Event Queue</li>
+                    <li>Service Locator</li>
+                    <li>Singleton</li>
+                    <li>State</li>
+                </ul>
             </p>
-        </div>
-        <a href="https://github.com/fleurslabbinck/DAE_Programming4_Bomberman/tree/main/Minigin" target="_blank">
-            <div class="plug">
+
+            <div class="layout">
+                <div class="s-spacer"></div>
+                <h1>What I Learned</h1>
+            </div>
+
+            <p class="description">
+                This was by far my most interesting project yet.
+                Getting to know how game engines work was invaluable
+                and improved me as a gameplay programmer in general.
+                The whole experience taught me a lot and I cannot
+                wait to keep learning more.
+            </p>
+
+            <div class="layout">
+                <div class="s-spacer"></div>
+            </div>
+
+            <a class="plug" href="https://github.com/fleurslabbinck/DAE_Programming4_Bomberman/tree/main/Minigin" target="_blank">
                 <i class="fa-brands fa-github"></i>
                 <p>Project</p>
+            </a>
+
+            <div class="layout">
+                <div class="s-spacer"></div>
             </div>
-        </a>
-    </section>
+        </section>
+    </main>
 </body>
 </html>

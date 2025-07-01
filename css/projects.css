@@ -1,0 +1,22 @@
+﻿/* projects */
+
+@import url("Components/project-card.css");
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    gap: 30px;
+    max-width: var(--content-width);
+    width: 95%;
+    margin: 0 auto;
+}
+
+.projects i {
+    padding-left: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .projects {
+        grid-template-columns: unset;
+    }
+}

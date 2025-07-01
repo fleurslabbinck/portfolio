@@ -1,0 +1,29 @@
+﻿/* skills */
+
+@import url("Components/skill-container.css");
+
+.skills {
+    max-width: var(--content-width);
+    width: 95%;
+    margin: 0 auto;
+}
+
+.skills .info {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+.skills .info li {
+    position: relative;
+    margin: 10px;
+    color: var(--background-color-dark);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.skills .skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    gap: 50px;
+}
