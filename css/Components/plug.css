@@ -45,7 +45,9 @@
     background-color: var(--background-color-dark);
     border: dashed var(--accent-color);
     border-radius: 100px;
-    transition: background-color var(--transition-speed) var(--transition-ease), transform var(--transition-speed) var(--transition-ease);
+    transition: background-color var(--transition-speed) var(--transition-ease),
+            transform var(--transition-speed) var(--transition-ease),
+            box-shadow var(--transition-speed) var(--transition-ease);
 }
 
 .plug i {
@@ -60,6 +62,7 @@
 .plug:hover {
     background-color: var(--secondary-color);
     transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .plug:active {

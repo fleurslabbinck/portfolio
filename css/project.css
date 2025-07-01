@@ -4,6 +4,7 @@
 
 @import url("Components/navigation-bar.css");
 @import url("Components/page-layout.css");
+@import url("Components/list.css");
 @import url("Components/yt-container.css");
 @import url("Components/plug.css");
 
@@ -33,12 +34,13 @@
 .project .images {
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 1fr));
-    justify-items: center;
+    gap: 30px;
+    align-items: center;
 }
 
 .project img {
-    padding: 10px;
     max-width: 100%;
+    border: solid var(--accent-color);
     border-radius: var(--border-radius-container);
 }
 

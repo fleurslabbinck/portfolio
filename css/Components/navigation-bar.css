@@ -53,12 +53,15 @@
     color: var(--background-color-light);
     border: 1px solid transparent;
     border-radius: var(--border-radius-button);
-    transition: background-color var(--transition-speed) var(--transition-ease), transform var(--transition-speed) var(--transition-ease);
+    transition: background-color var(--transition-speed) var(--transition-ease), 
+            transform var(--transition-speed) var(--transition-ease),
+            box-shadow var(--transition-speed) var(--transition-ease);
 }
 
 .nav ul li a:hover {
     background-color: var(--tertiary-color);
     transform: var(--button-scale);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .nav ul li a:active {

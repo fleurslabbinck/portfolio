@@ -10,12 +10,18 @@
     background-color: var(--primary-color);
     border-radius: var(--border-radius-container);
     transition: background-color var(--transition-speed) var(--transition-ease), 
-        transform var(--transition-speed) var(--transition-ease);
+        transform var(--transition-speed) var(--transition-ease),
+        box-shadow var(--transition-speed) var(--transition-ease);
 }
 
 .card:hover {
     background-color: var(--tertiary-color);
     transform: var(--container-scale);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card:active {
+    background-color: var(--accent-color);
 }
 
 .card .content {
