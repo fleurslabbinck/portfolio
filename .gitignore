@@ -1,0 +1,22 @@
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore Visual Studio user-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build results (if any future extensions)
+bin/
+obj/
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore node_modules (if you add JS packages later)
+node_modules/
+
+# Ignore environment and log files
+.env
+*.log
