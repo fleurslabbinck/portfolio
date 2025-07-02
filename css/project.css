@@ -8,12 +8,6 @@
 @import url("Components/yt-container.css");
 @import url("Components/plug.css");
 
-.project {
-    max-width: var(--content-width);
-    width: 95%;
-    margin: 0 auto;
-}
-
 .project .info li {
     display: flex;
     align-items: center;
@@ -44,7 +38,7 @@
     border-radius: var(--border-radius-container);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
     .project .images {
         display: grid;
         grid-template-columns: unset;

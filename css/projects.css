@@ -6,16 +6,13 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 1fr));
     gap: 30px;
-    max-width: var(--content-width);
-    width: 95%;
-    margin: 0 auto;
 }
 
 .projects i {
     margin: 5px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
     .projects {
         grid-template-columns: unset;
     }
